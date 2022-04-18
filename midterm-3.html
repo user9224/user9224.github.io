@@ -1,0 +1,98 @@
+<html>
+
+<head>
+  <title>Problem3.html</title>
+  <style>
+    body {
+      display: grid;
+    }
+
+    .container {
+      margin-bottom: 20px;
+      width: 1280px;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .gnb {
+      float: left;
+      background-color: green;
+      height: 50px;
+      display: flex;
+    }
+
+    .gnb > * {
+      margin: auto 0px;
+      margin-right: 12px;
+    }
+
+    .gnb > *:last-child {
+      margin-right: 0px;
+    }
+
+    .rank {
+      float: right;
+      background-color: yellow;
+      height: 50px;
+    }
+
+    .left {
+      float: left;
+      background-color: pink;
+      width: 630px;
+      height: 480px;
+    }
+
+    .right {
+      float: right;
+      background-color: skyblue;
+      width: 630px;
+      height: 480px;
+    }
+
+    .footer {
+      background-color: yellow;
+      height: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Logo</h1>
+  </div>
+  <div class="container">
+    <div class="gnb">
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+    </div>
+    <div class="rank">
+      <p>실시간 검색 순위</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="left">
+      <a href="#html">
+        <h1>HTML</h1>
+      </a>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, in error numquam unde, debitis voluptas illo
+      vero et facilis consequuntur culpa consectetur veritatis animi voluptate rem voluptatem veniam cum natus!
+    </div>
+    <div class="right">
+      <a href="#css">
+        <h1>CSS</h1>
+      </a>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facilis, exercitationem assumenda commodi
+      quisquam quasi! Recusandae, nam ipsa! Harum officia nam vitae ipsa necessitatibus repellendus aperiam, pariatur
+      aliquid in laudantium!
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer">
+      <p>Copyright 2022 by Dongseo Kim</p>
+    </div>
+  </div>
+</body>
+
+</html>
