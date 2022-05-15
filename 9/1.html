@@ -1,0 +1,19 @@
+<html>
+  <head></head>
+  <body>
+    <h2>월화수목금토일</h2>
+    <hr>
+    <p><span id='day'></span> <span id='result'></span></p>
+    <script>
+      const days = ['월', '화', '수', '목', '금', '토', '일'];
+      const josa = ['은', '는', '는', '은', '은', '는', '은'];
+      const r = prompt('월화수목금토일 중에서 입력하세요')
+      document.getElementById('day').innerText = r + (days.indexOf(r) >= 0 ? josa[days.indexOf(r)] : '는');
+      if (days.indexOf(r) == -1 || days.indexOf(r) > 4) {
+        document.getElementById('result').innerText = '휴일';
+      } else {
+        document.getElementById('result').innerText = '출근';
+      }
+    </script>
+  </body>
+</html>
