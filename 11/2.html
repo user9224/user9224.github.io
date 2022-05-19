@@ -1,0 +1,33 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h3>book 객체 만들기</h3>
+    <hr/>
+    <script>
+      var o1 = new Object({
+        title: 'HTML5',
+        author: '임효택',
+        price: 20000
+      })
+
+      var o2 = {
+        title: 'HTML5',
+        author: '임효택',
+        price: 20000
+      }
+
+      function Book() {}
+
+      var o3 = new Book();
+
+      Book.prototype.title = 'HTML5';
+      Book.prototype.author = '임효택';
+      Book.prototype.price = 20000;
+
+      document.write('book: ' + o1.title + ' ' + o1.author + ' ' + o1.price + '<br/>');
+      document.write('book: ' + o2.title + ' ' + o2.author + ' ' + o2.price + '<br/>');
+      document.write('book: ' + o3.title + ' ' + o3.author + ' ' + o3.price + '<br/>');
+    </script>
+  </body>
+</html>
