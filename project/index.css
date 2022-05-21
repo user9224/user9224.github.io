@@ -1,0 +1,191 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+.banner img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  position: relative;
+  float: left;
+  width: 15%;
+  padding: 0px 5%;
+}
+
+.navigation .name {
+  padding: 35px 0;
+  text-align: center;
+  background-color: rgb(183, 15, 15);
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+
+.tab-button {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 5% 35px;
+  text-align: left;
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+  background: transparent;
+  border: 1px solid #999;
+}
+
+.tab-button[data-active='true'] {
+  background-color: #5d0f1c;
+  color: white;
+  border: unset;
+
+}
+
+.tab-button:not([data-active='true']):hover {
+  background-color: rgba(240, 240, 240, 1);
+  text-decoration: underline;
+}
+
+.content {
+  float: left;
+  width: 70%;
+}
+
+.content > h1:first-child {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.notice {
+  height: 300px;
+  margin: 5% 0px;
+
+  overflow: hidden;
+}
+
+.notice .left {
+  float: left;
+  width: 20%;
+  height: 100%;
+  padding: 60px 5%;
+  background-color: rgb(183, 15, 15);
+  color: white;
+}
+
+.notice .left .title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.notice .left .title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #fff;
+  margin: 16px 0 17px;
+}
+
+.introduction {
+  margin-bottom: 10vh;
+}
+
+.notice .right {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+
+.notice .right img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  gap: 32px;
+}
+
+.hero .title {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.hero .text {
+  font-size: 0.95em;
+}
+
+.hero .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.professors {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 10vh;
+}
+
+.professors .left img {
+  width: 133px;
+  height: 180px;
+}
+
+.professor {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.professor .right .name {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.professor .right {
+  padding-bottom: 20px;
+}
+
+td {
+  position: relative;
+  font-size: 0.95em;
+}
+
+td:first-child {
+  color: #9c1229;
+  width: 70px;
+}
+
+td:first-child::before {
+  position: absolute;
+  top: 9px;
+  left: -12px;
+  content: "";
+  display: block;
+  width: 3px;
+  height: 2px;
+  background: #9c1229;
+}
