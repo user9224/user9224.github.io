@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5</title>
+</head>
+<body>
+<h3>옵션 선택으로 사이트 접속</h3>
+<p>옵션 선택 마다 새 윈도우에 접속합니다.</p>
+<hr>
+<p>
+접속할 사이트
+</p>
+<select name='sites'>
+  <option value='' selected>선택</option>
+  <option value='naver' data-link="https://naver.com">네이버</option>
+  <option value='google' data-link="https://google.com">구글</option>
+  <option value='oracle' data-link="https://oracle.com">오라클</option>
+</select>
+<script>
+  window.onload = () => {
+    const a = document.querySelector('select')
+    a.addEventListener('change', ev => {
+      const a = document.querySelector('select')
+      console.log('test')
+      window.open(a.options[a.selectedIndex].dataset.link)
+    })
+  }
+</script>
+</body>
+</html>
