@@ -22,8 +22,7 @@
     const a = document.querySelector('select')
     a.addEventListener('change', ev => {
       const a = document.querySelector('select')
-      console.log('test')
-      window.open(a.options[a.selectedIndex].dataset.link)
+      window.open(a.options[a.selectedIndex].dataset.link, '', 'popup')
     })
   }
 </script>
